@@ -5,20 +5,21 @@ import App from './App.jsx'
 //firebase
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA4ZsITTmAYNmaGltq4l3SOjgIvWsUdAtU",
-  authDomain: "proyecto-final-c6709.firebaseapp.com",
-  projectId: "proyecto-final-c6709",
-  storageBucket: "proyecto-final-c6709.appspot.com",
-  messagingSenderId: "647091127653",
-  appId: "1:647091127653:web:b8dc049b5fc13c6d25cd8c",
-  measurementId: "G-2CX0PN10B9"
+  apiKey: "AIzaSyC2qOJERDjqvLJR-pxv7e6WmUG5y47tsoQ",
+  authDomain: "ecommerce-a04f0.firebaseapp.com",
+  projectId: "ecommerce-a04f0",
+  storageBucket: "ecommerce-a04f0.appspot.com",
+  messagingSenderId: "607371955690",
+  appId: "1:607371955690:web:cdacf0fc785b27706df693"
 };
 
 // Initialize Firebase
-initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

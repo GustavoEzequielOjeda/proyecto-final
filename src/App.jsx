@@ -1,3 +1,5 @@
+import { CartProvider } from '../src/components/context/CartContext';
+
 import MainRouter from "./routes/MainRouter";
 import MainLayout from "./layouts/MainLayout";
 
@@ -7,9 +9,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
-  return <MainLayout>
+  return(
+    <CartProvider>
+    <MainLayout>
     <MainRouter />
-    </MainLayout>
+  </MainLayout>
+  </CartProvider>
+  )
 }
 
 export default App;

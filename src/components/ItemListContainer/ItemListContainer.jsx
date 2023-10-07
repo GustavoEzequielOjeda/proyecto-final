@@ -2,13 +2,14 @@ import { useNavigate } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import "../../App.css";
 
 const ItemListContainer = ({ productsData }) => {
 
   const navigate = useNavigate();
   
   return (
-    <div>
+    <div className="cards">
       {productsData.map((product) => {
         return (
           <Card style={{ width: "18rem" }} key={product.id}>
